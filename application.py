@@ -10,7 +10,7 @@ def hello():
 @app.route("/sentiment", methods=['GET'])
 def predecir():
     dato = request.get_json()["texto"]
-    with open("sentiment_model", "rb") as f:
+    with open("/model/sentiment_model", "rb") as f:
         modelo = pickle.load(f)
     prediccion = modelo.predict(dato)
     resultado = []
