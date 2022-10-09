@@ -19,8 +19,7 @@ def predecir():
             resultado.append("El texto es positivo")
         elif x == 0:
             resultado.append("El texto es negativo")
-    return str(prediccion)
+    return str(resultado)
 if __name__ == "__main__":
     app.debug = True
     app.run()
-
